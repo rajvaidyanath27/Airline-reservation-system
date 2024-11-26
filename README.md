@@ -1,0 +1,1 @@
+The Airline Reservation System is a Java-based application designed to simplify the process of booking, managing, and tracking flight reservations. This system is tailored to enhance user experience, ensure efficiency, and maintain data integrity.
