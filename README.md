@@ -15,9 +15,14 @@ Tech Stack 💻
 
 Frontend:
 HTML
+
 CSS (Bootstrap for responsive design)
+
 JavaScript
+
 Backend:
+
 Java (Spring Boot Framework)
+
 Thymeleaf (for dynamic content rendering)
 
