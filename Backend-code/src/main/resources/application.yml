@@ -1,0 +1,44 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /airline
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/airline_db
+    username: root
+    password: your_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 5
+    jpa:
+      hibernate:
+        ddl-auto: update
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+          show_sql: true
+  jackson:
+    serialization:
+      indent-output: true
+
+logging:
+  level:
+    org.springframework.web: INFO
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+
+airline:
+  booking:
+    max-seats-per-flight: 150
+  notification:
+    email:
+      enabled: true
+    sms:
+      enabled: false
+
+# Profiles configuration
+spring:
+  profiles:
+    active: dev
